@@ -25,12 +25,14 @@ class Bot(Client):
         )
 
       
-    import asyncio
+    from pyrogram import idle
+import asyncio
 
 if __name__ == "__main__":
     bot = Bot()
-    asyncio.run(bot.start())
-
+    bot.start()
+    idle()
+    bot.stop()
 # Don't Remove Credit Tg - @VJ_Bots
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
