@@ -25,19 +25,11 @@ class Bot(Client):
         )
 
       
-    async def start(self):
-            
-        await super().start()
-        print('Bot Started Powered By @VJ_Bots')
-
-    async def stop(self, *args):
-
-        await super().stop()
-        print('Bot Stopped Bye')
+    import asyncio
 
 if __name__ == "__main__":
     bot = Bot()
-    bot.run()
+    asyncio.run(bot.start())
 
 # Don't Remove Credit Tg - @VJ_Bots
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
